@@ -32,10 +32,10 @@
 				<configuration>
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
-						<muleVersion>4.4.0</muleVersion>
+						<muleVersion>4.5.0</muleVersion>
 						<username>gowri-march</username>
 						<password>Gowri123$</password>
-						<applicationName>mvn-test1</applicationName>
+						<applicationName>mvn-app111</applicationName>
 						<environment>Sandbox</environment>
 						<region>us-east-2</region>
 						<workers>1</workers>
