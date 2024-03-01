@@ -8,13 +8,9 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
 http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
 http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd">
-	<xml-module:config name="XML_Config" doc:name="XML Config" doc:id="6b2cf5d0-7157-4b2a-b5e0-fbf459434790" />
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="bd9337ce-6454-40a2-ab85-0fb785beda63" >
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
-	<db:config name="Database_Config" doc:name="Database Config" doc:id="cfdcea25-3301-43ee-8cc9-e4f50b91c8b3" >
-		<db:my-sql-connection host="localhost" port="3306" user="root" password="Gowri123$" database="training"/>
-	</db:config>
 	<flow name="demo1Flow" doc:id="c3a66e6c-8b22-48d5-b143-c92bc2a543f7" >
 <!-- [STUDIO:"Set Payload"]		<set-payload value='#[&lt;rows DATABASE_NAME = "CastIron"&gt;&#10;&lt;row&gt;&#10;&lt;CUST_ID&gt;1234&lt;/CUST_ID&gt;&#10;&lt;NAME1&gt;JACK&lt;/NAME1&gt;&#10;&lt;TITLE&gt;Developer&lt;/TITLE&gt;&#10;&lt;EMAILID&gt;abc@gmail.com&lt;/TITLE&gt;&#10;&lt;/row&gt;&#10;&lt;/rows&gt;&#93;' doc:name="Set Payload" doc:id="fa143f04-7ead-4160-a0c3-e2676efe53e4" /> [STUDIO] -->
 		<http:listener doc:name="Listener" doc:id="276d10a8-d083-4ba5-a8b9-02a03908f4db" config-ref="HTTP_Listener_config" path="/demo"/>
